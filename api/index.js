@@ -26,7 +26,7 @@ const authRouter = require('./routes/authRoutes');
 const chatRouter = require('./routes/chatRoutes');
 
 const app = express();
-app.use(express.static(path.resolve(__dirname, './client/build')));
+app.use(express.static(path.resolve(__dirname, '../client/dist')));
 app.use('/uploads', express.static(__dirname + '/uploads'));
 app.use(express.json());
 app.use(cookieParser());
