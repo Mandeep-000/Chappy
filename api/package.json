@@ -1,4 +1,11 @@
 {
+  "scripts": {
+    "install-dependencies": "npm run install-client && npm install",
+    "setup-production": "npm install && npm run install-client && npm run build-client",
+    "install-client": "cd ../client && npm install",
+    "build-client": "cd ../client && npm run build",
+    "start": "node server.js"
+  },
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cookie-parser": "^1.4.6",
